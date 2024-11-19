@@ -10,9 +10,9 @@ if argv[1][-4:] == ".txt":
     with open("sites.txt") as f:
         mysites = f.readlines()
 elif argv[1].find("-") != -1:
-    ...
+    mysites = functions.func_range(argv[1])
 elif argv[1].find(",") != -1:
-    ...
+    mysites = functions.func_list(argv[1])
 else:
     mysites = [argv[1]]
 
