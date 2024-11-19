@@ -12,7 +12,6 @@ def func_range(st: str):
     start, end = st.split("-")
     start_list = _func_split(start)
     end_list = _func_split(end)
-    print(end_list[-1])
     addr_list = []
     for i in range(int(start_list[3]), int(end_list[-1])+1):
         addr_list.append(f"{start_list[0]}.{start_list[1]}.{
