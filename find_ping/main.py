@@ -1,13 +1,12 @@
 #!python3.12
-import os
+# import os
 import functions
 from sys import argv
 from tqdm import tqdm
 
 
 if argv[1][-4:] == ".txt":
-    print("with open()")
-    with open("sites.txt") as f:
+    with open(argv[1]) as f:
         mysites = f.readlines()
 elif argv[1].find("-") != -1:
     mysites = functions.func_range(argv[1])
@@ -31,7 +30,6 @@ for site in list_fine:
 
 if len(list_down):
     print()
-    print("IT's DOWN")
+    print("IT's sites DOWN")
     for site in list_down:
         print(site)
-
