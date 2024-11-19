@@ -1,6 +1,6 @@
 ## Script find_ping
 Скрипт для ping-а нескольких хостов. Использует ping в своей работе. И библиотеку tqdm
-```pip install -r requirements.txt```
+```pip install -r requirements.txt``` or `pip install tqdm`
 
 ### Запуск
 1. `python3 /путь_к_файлу/main.py (param)`
