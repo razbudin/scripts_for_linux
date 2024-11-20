@@ -5,7 +5,10 @@ from tqdm import tqdm
 
 
 # Получение аргумента и выбор действия
-if argv[1][-4:] == ".txt":
+if len(argv) < 2:
+    with open("sites.txt") as f:
+        mysites = f.readlines()
+elif argv[1][-4:] == ".txt":
     with open(argv[1]) as f:
         mysites = f.readlines()
 elif argv[1].find("-") != -1:
