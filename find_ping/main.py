@@ -1,5 +1,4 @@
-#!python3.12
-# import os
+#!/usr/bin/env python3.12
 import functions
 from sys import argv
 from tqdm import tqdm
